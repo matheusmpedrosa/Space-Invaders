@@ -9,27 +9,50 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import AVFoundation
 
 class GameViewController: UIViewController {
 
+    var backingAudio = AVAudioPlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let filePaph = Bundle.main.path(forResource: "backingAudio", ofType: "mp3")
+        
+        let audioNSURL = NSURL(fileURLWithPath: filePaph!)
+        
+        do { backingAudio = try AVAudioPlayer(contentsOf: audioNSURL as URL) }
+        catch { return print("deu pau no audio") }
+        
+        backingAudio.numberOfLoops = -1
+        backingAudio.play()
+        
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
+            let scene = MainMenuScene(size: CGSize(width: 1536, height: 2048))
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 
                 // Present the scene
                 view.presentScene(scene)
-            }
             
             view.ignoresSiblingOrder = true
             
-            view.showsFPS = true
-            view.showsNodeCount = true
+            view.showsFPS = false
+            view.showsNodeCount = false
         }
+//        let scene = GameScene(size: CGSize(width: 1536, height: 2048))
+//        let skView = self.view as! SKView?
+//        skView?.showsFPS = true
+//        //skView?.showsNodeCount = true
+//        
+//        skView?.ignoresSiblingOrder = true
+//        
+//        scene.scaleMode = .aspectFill
+//        
+//        skView?.presentScene(scene)
     }
 
     override var shouldAutorotate: Bool {

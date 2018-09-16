@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		513B941B1F0B9417004BFCAF /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B941A1F0B9417004BFCAF /* MainMenuScene.swift */; };
+		513B941D1F0B981F004BFCAF /* backingAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 513B941C1F0B981F004BFCAF /* backingAudio.mp3 */; };
 		519EF1551F0A64F300FD88E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EF1541F0A64F300FD88E8 /* AppDelegate.swift */; };
 		519EF1571F0A64F300FD88E8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 519EF1561F0A64F300FD88E8 /* GameScene.sks */; };
 		519EF1591F0A64F300FD88E8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 519EF1581F0A64F300FD88E8 /* Actions.sks */; };
@@ -15,9 +17,15 @@
 		519EF1601F0A64F300FD88E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519EF15E1F0A64F300FD88E8 /* Main.storyboard */; };
 		519EF1621F0A64F300FD88E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 519EF1611F0A64F300FD88E8 /* Assets.xcassets */; };
 		519EF1651F0A64F300FD88E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519EF1631F0A64F300FD88E8 /* LaunchScreen.storyboard */; };
+		519EF16D1F0A7B2400FD88E8 /* bulletSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 519EF16C1F0A7B2400FD88E8 /* bulletSound.mp3 */; };
+		519EF16F1F0B670E00FD88E8 /* explosionSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 519EF16E1F0B670E00FD88E8 /* explosionSound.mp3 */; };
+		519EF1711F0B73E100FD88E8 /* theBoldFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 519EF1701F0B73A200FD88E8 /* theBoldFont.ttf */; };
+		519EF1771F0B832A00FD88E8 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EF1761F0B832A00FD88E8 /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		513B941A1F0B9417004BFCAF /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		513B941C1F0B981F004BFCAF /* backingAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backingAudio.mp3; sourceTree = "<group>"; };
 		519EF1511F0A64F300FD88E8 /* Space Invaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Invaders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		519EF1541F0A64F300FD88E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		519EF1561F0A64F300FD88E8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -28,6 +36,10 @@
 		519EF1611F0A64F300FD88E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		519EF1641F0A64F300FD88E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		519EF1661F0A64F300FD88E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		519EF16C1F0A7B2400FD88E8 /* bulletSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bulletSound.mp3; sourceTree = "<group>"; };
+		519EF16E1F0B670E00FD88E8 /* explosionSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosionSound.mp3; sourceTree = "<group>"; };
+		519EF1701F0B73A200FD88E8 /* theBoldFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = theBoldFont.ttf; sourceTree = "<group>"; };
+		519EF1761F0B832A00FD88E8 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,12 @@
 				519EF1581F0A64F300FD88E8 /* Actions.sks */,
 				519EF15A1F0A64F300FD88E8 /* GameScene.swift */,
 				519EF15C1F0A64F300FD88E8 /* GameViewController.swift */,
+				519EF1761F0B832A00FD88E8 /* GameOverScene.swift */,
+				513B941A1F0B9417004BFCAF /* MainMenuScene.swift */,
+				519EF16C1F0A7B2400FD88E8 /* bulletSound.mp3 */,
+				513B941C1F0B981F004BFCAF /* backingAudio.mp3 */,
+				519EF16E1F0B670E00FD88E8 /* explosionSound.mp3 */,
+				519EF1701F0B73A200FD88E8 /* theBoldFont.ttf */,
 				519EF15E1F0A64F300FD88E8 /* Main.storyboard */,
 				519EF1611F0A64F300FD88E8 /* Assets.xcassets */,
 				519EF1631F0A64F300FD88E8 /* LaunchScreen.storyboard */,
@@ -133,11 +151,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				519EF1711F0B73E100FD88E8 /* theBoldFont.ttf in Resources */,
 				519EF1601F0A64F300FD88E8 /* Main.storyboard in Resources */,
 				519EF1571F0A64F300FD88E8 /* GameScene.sks in Resources */,
 				519EF1621F0A64F300FD88E8 /* Assets.xcassets in Resources */,
 				519EF1651F0A64F300FD88E8 /* LaunchScreen.storyboard in Resources */,
 				519EF1591F0A64F300FD88E8 /* Actions.sks in Resources */,
+				519EF16D1F0A7B2400FD88E8 /* bulletSound.mp3 in Resources */,
+				519EF16F1F0B670E00FD88E8 /* explosionSound.mp3 in Resources */,
+				513B941D1F0B981F004BFCAF /* backingAudio.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,8 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513B941B1F0B9417004BFCAF /* MainMenuScene.swift in Sources */,
 				519EF15B1F0A64F300FD88E8 /* GameScene.swift in Sources */,
 				519EF15D1F0A64F300FD88E8 /* GameViewController.swift in Sources */,
+				519EF1771F0B832A00FD88E8 /* GameOverScene.swift in Sources */,
 				519EF1551F0A64F300FD88E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,10 +301,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R95CT9ATA8;
 				INFOPLIST_FILE = "Space Invaders/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "matheusmpedrosa.Space-Invaders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -290,10 +316,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R95CT9ATA8;
 				INFOPLIST_FILE = "Space Invaders/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "matheusmpedrosa.Space-Invaders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -316,6 +344,7 @@
 				519EF16B1F0A64F300FD88E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
